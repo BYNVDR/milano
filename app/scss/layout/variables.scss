@@ -1,0 +1,64 @@
+/* colors */
+
+$purple: #C447FF;
+$black:#262424;
+$black-light:#545454;
+$gray:#EFEFEF;
+$text-gray:#A9A9A9;
+$pink:#FFF1F1;
+$pink-intence: #F8E6E6;
+$gradient:linear-gradient(180deg, #E85FB1 0%, #C447FF 100%);
+$gradient-hover: linear-gradient(180deg, #f184c5 0%, #d06eff 100%);
+
+/*fonts*/
+
+$rnormal: 'Roboto', Arial, Helvetica, sans-serif;
+$ynormal:  'Yeseva One', 'Comic Sans MS', 'Monaco' , cursive;
+
+/*adaptive*/
+
+$small-desktop: 1200px;
+$tablets: 1023px;
+$phones: 480px;
+$phones-small: 375px;
+
+@mixin small-desktop{
+	@media screen and (max-width: $small-desktop) {
+		@content;
+	}
+}
+
+@mixin tablets{
+	@media screen and (max-width: $tablets) {
+		@content;
+	}
+}
+
+@mixin phones{
+	@media screen and (max-width: $phones) {
+		@content;
+	}
+}
+
+@mixin phones-small{
+	@media screen and (max-width: $phones-small) {
+		@content;
+	}
+}
+
+@mixin flexCenterCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flexCenterSpaceBetween {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+@function rem($px){
+	@return $px / 16px + 0rem;
+}

@@ -1,0 +1,11 @@
+.main-title {
+    font-family: $ynormal;
+    &--md {
+        font-size: rem(54px);
+        margin-bottom: rem(15px);
+    }
+}
+
+.gradient-wrapper {
+    background: linear-gradient(180deg, #FFFFFF 5%, #F8F8F8 6%, rgba(255, 255, 255, 0) 50%, #FFF1F1 100%);
+}

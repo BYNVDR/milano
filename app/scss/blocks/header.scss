@@ -1,0 +1,63 @@
+.header {
+    padding: 2rem 0;
+    color: $black;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav {
+    flex: .8;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: rem(180px);
+    height: rem(62px);
+}
+
+.header__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__menu-link {
+    font-family: $rnormal;
+    color: inherit;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.header__viber {
+    @include flexCenterCenter;
+}
+
+.header__viber-logo {
+    margin-right: rem(15px);
+}
+
+.header__viber-content {
+    @include flexCenterCenter;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align-last: left;
+}
+
+.header__phone {
+    font-family: $rnormal;
+    font-weight: bold;
+    color: inherit;
+}
+
+.header__viber-link {
+    color: inherit;
+    font-weight: 200;
+    text-decoration: underline;
+    letter-spacing: 0.1em;
+}

@@ -1,0 +1,47 @@
+.services{
+    background: url(../images/linnn.png) -5% bottom/ 23% no-repeat;
+}
+
+.services__main-title {
+    text-align: center;
+    margin-bottom: rem(42px);
+}
+
+.services__item {
+    background: #FFFFFF;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    transition: all .3s ease-out;
+    cursor: pointer;
+    img {
+        transition: all .2s ease-out;
+    }
+    &:hover {
+        background-color: #F8E6E6;
+        .services__item-button {
+            background: linear-gradient(180deg, #E85FB1 0%, #C447FF 100%);
+            color: #FFFFFF;
+        }
+        img {
+            transform: scale(1.1);
+        }
+    }
+}
+
+.services__item-pic {
+    margin-bottom: rem(26px);
+    height: rem(383px);
+    overflow: hidden;
+}
+
+.services__item-title {
+    font-size: rem(24px);
+    margin: 0 auto;
+    margin-bottom: rem(17px);
+    max-width: 90%;
+}
+
+.services__item-button {
+    margin-bottom: rem(28px);
+}

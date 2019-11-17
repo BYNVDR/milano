@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+
+    @include small-desktop {
+        font-size: 14px;
+    }
+
+    @include tablets {
+        font-size: 13px;
+    }
+
+    @include phones {
+        font-size: 12px;
+    }
+
+    @include phones-small {
+        font-size: 11px;
+    }
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.15;
+    height: 100%;
+    width: 100%;
+    font-size: rem(18px);
+    font-family: $rnormal;
+    &.fixed {
+        overflow: hidden;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $ynormal;
+    margin: 0;
+}
+
+h1 {
+    font-size: rem(64px);
+}
+h2 {
+    font-size: rem(36px);
+}
+
+h3 {
+    font-size: rem(30px);
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+
+    li {
+        list-style: none;
+    }
+}
+
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+address {
+    font-style: normal;
+}
+
+.wrapper {
+    overflow: hidden;
+    width: 100%;
+    min-height: 100%;
+}
+
+.container {
+    max-width: 1375px;
+    width: 95%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.section-main {
+    padding: rem(40px);
+}
+
+.y-title {
+    font-family: $ynormal;
+}
+
+.btn {
+    display: inline-block;
+    border: 0;
+    background-color: transparent;
+    font-weight: bold;
+    cursor: pointer;
+    &.purple-btn {
+        background: $gradient;
+        font-family: $rnormal;
+        font-weight: 500;
+        text-transform: uppercase;
+        border-radius: 49px;
+        color: #FFFFFF;
+        height: rem(58px);
+        line-height: rem(58px);
+        padding: 0 rem(62px);
+        transition: all .3s ease-out;
+        &:hover {
+            background: $gradient-hover;
+        }
+    }
+    &.gray-btn {
+        background-color: $gray;
+        font-family: $rnormal;
+        font-weight: 500;
+        text-transform: uppercase;
+        border-radius: 49px;
+        color:$black-light;
+        height: rem(58px);
+        line-height: rem(58px);
+        padding: 0 rem(38px);
+    }
+    &.purple-btn-sm {
+        background: $gradient;
+        font-family: $rnormal;
+        font-weight: 500;
+        text-transform: uppercase;
+        border-radius: 49px;
+        color: #FFFFFF;
+        height: rem(58px);
+        line-height: rem(58px);
+        padding: 0 rem(38px);
+        transition: all .3s ease-out;
+        &:hover {
+            background: $gradient-hover;
+        }
+    }
+    &.transparent-btn {
+        background: transparent;
+        font-family: $rnormal;
+        font-weight: 500;
+        text-transform: uppercase;
+        border-radius: 49px;
+        border: 2px solid $purple;
+        color: $purple;
+        height: rem(58px);
+        line-height: rem(58px);
+        padding: 0 rem(38px);
+        transition: all .3s ease-out;
+    }
+}

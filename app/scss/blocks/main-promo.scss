@@ -1,0 +1,122 @@
+.promo {
+    padding-bottom: 0;
+    background-color: #FFF1F1;
+}
+.promo__left {
+   position: relative;
+   background: url('../images/promo_bg.jpg') right top / 60% no-repeat;
+}
+.promo__title {
+    font-size: rem(64px);
+    font-family: $ynormal;
+    max-width: rem(400px);
+    margin-bottom: rem(10px);
+}
+.promo__desc {
+    font-size: rem(20px);
+    color:$black-light;
+    max-width: rem(280px);
+    margin-bottom: rem(25px);
+}
+.promo__price {
+    padding: rem(13px) rem(35px);
+    background-color: #FFFFFF;
+    border-radius: 49px;
+    font-size: rem(27px);
+    margin-bottom: rem(25px);
+    display: inline-block;
+    span {
+        font-weight: bold;
+    }
+}
+.promo__cover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+
+.promo__right {
+    background-color: #FFFFFF;
+    padding-top: rem(30px);
+    padding-left: rem(0px);
+    position: relative;
+    padding-bottom: rem(20px);
+    &:after {
+        content: '';
+        position: absolute;
+        width: 30%;
+        height: 100%;
+        right: -30%;
+        top: 0;
+        background-color: #FFFFFF;
+    }
+}
+.promo__item {
+    // margin-bottom: rem(50px);
+    border-radius: 5px;
+    position: relative;
+    z-index: 2;
+    left: rem(-10px);
+   
+    padding: rem(19px) rem(40px) rem(24px) rem(42px);
+    &:hover {
+        background-color: #FFFFFF;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.14);
+        .promo__item-detail {
+            opacity: 1;
+        }
+    }
+}
+.promo__item-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: rem(15px);
+    &:after {
+        content:'';
+        height: 1px;
+        width: 100%;
+        background-color: $black;
+        order: 2;
+        margin: 3px rem(20px) 0;
+    }
+}
+.promo__item-title {
+    font-family: $ynormal;
+    font-size: rem(24px);
+    position: relative;
+    z-index: 2;
+    order: 1;
+    flex-shrink: 0;
+}
+.promo__item-price {
+    color: $purple;
+    font-size: rem(24px);
+    order: 3;
+    flex-shrink: 0;
+}
+.promo__item-text {
+    color: $text-gray;
+    font-size: rem(18px);
+    margin-bottom: rem(20px);
+}
+
+.promo__item-detail {
+    opacity: 0;
+    font-size: rem(16px);
+    line-height: 1.2;
+    color: $purple;
+    display: flex;
+    align-items: flex-start;
+    text-transform: uppercase;
+    font-weight: bold;
+    &:after {
+        content: '';
+        margin-left: 10px;
+        background: url('../images/detail-arrow.svg') center center / contain no-repeat;
+        width: 8.5px;
+        height: 17px;
+    }
+}

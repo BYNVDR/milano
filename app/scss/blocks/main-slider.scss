@@ -1,0 +1,96 @@
+.main-slider {
+    position: relative;
+    .owl-nav {
+        display: none;
+    }
+    .owl-dots {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: rem(50px);
+    }
+    .owl-dot {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: #FFFFFF;
+        opacity: .5;
+        transition: opacity .3s ease-out;
+        border: 0;
+        &.active {
+            opacity: 1;
+        }
+    }
+}
+
+.main-slider__container {
+    &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: rem(22px);
+        left: -.5%;
+        width: 101%;
+        height: 100%;
+        top: rem(22px);
+        background: url(../images/dashed_bg.svg) center center / contain no-repeat;
+        z-index: 2;
+    }
+}
+
+.main-slider__wrapper {
+    position: relative;
+    z-index: 3;
+}
+
+.main-slider__slide {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: rem(556px);
+    background: center center / cover no-repeat;
+    z-index: 3;
+    position: relative;
+}
+
+.main-slider__content {
+    margin-right: 200px;
+    max-width: 300px;
+}
+
+.main-slider__desc {
+    font-size: rem(20px);
+    font-weight: 300;
+    margin-bottom: rem(25px);
+}
+
+.main-slider__buttons {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 2.5%;
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    z-index: 4;
+}
+
+.main-slider__button {
+    width: rem(55px);
+    height: rem(55px);
+    border: 1px solid $black;
+    border-radius: 6px;
+    transition: background .3s ease-out;
+    &:hover {
+        background-color: $black;
+        svg {
+            stroke: #FFFFFF;
+        }
+    }
+    @include flexCenterCenter;
+    svg {
+        stroke: $black;
+        height: 50%;
+        transition: stroke .3s ease-out;
+    }
+}

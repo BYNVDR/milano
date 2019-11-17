@@ -1,0 +1,44 @@
+.contacts__main-title {
+    text-align: center;
+    margin-bottom: rem(60px);
+}
+
+.contacts__head {
+    margin-bottom: rem(24px);
+}
+
+.contacts__address {
+    display: flex;
+}
+
+.contacts__col {
+    width: 60%;
+    margin-right: rem(12px);
+}
+
+.contacts__col-address {
+    display: flex;
+    font-family: $ynormal;
+font-size: rem(18px);
+line-height: rem(21px);
+    &:before {
+        content: '';
+        width: rem(28px);
+        margin-right: rem(11px);
+        flex-shrink: 0;
+        background: url('../images/map-marker.png') center center / contain no-repeat;
+    }
+}
+
+.contacts__phone {
+    font-family: $ynormal;
+    font-size: rem(18px);
+    line-height: rem(21px);
+    color: $purple;
+}
+
+.contacts__time {
+    font-size: rem(18px);
+    line-height: rem(21px);
+    font-weight: 300;
+}
