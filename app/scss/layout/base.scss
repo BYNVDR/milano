@@ -101,6 +101,7 @@ address {
 .img-fluid {
     max-width: 100%;
     height: auto;
+    display: block;
 }
 
 .section-main {
@@ -114,6 +115,11 @@ address {
     padding-bottom: rem(73px);
     padding-top: rem(34px);
     margin-bottom: rem(100px);
+}
+
+.section-transparent-bg {
+    padding-bottom: rem(73px);
+    padding-top: rem(34px);
 }
 
 .y-title {

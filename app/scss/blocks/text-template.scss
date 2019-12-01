@@ -1,9 +1,17 @@
 .milano__text-content {
+    h3 {
+        text-align: center;
+        margin-bottom: rem(50px);
+    }
     p {
+        text-align: justify;
         font-weight: 300;
         line-height: 125%;
         margin-bottom: rem(20px);
         color: $black-light;
+        b {
+            color: $black;
+        }
     }
     ul {
         li {

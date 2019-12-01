@@ -1,0 +1,56 @@
+.sewing__card {
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 20px;
+    &:hover {
+        background-color: $pink-intence;
+        .btn {
+            background: $gradient;
+            color: #FFFFFF;
+        }
+    }
+}
+.sewing__card-picture {
+    flex-shrink: 0;
+    width: rem(320px);
+    height: rem(278px);
+}
+
+.sewing__card-content {
+    padding-top: rem(25px);
+    padding-right: rem(38px);
+    padding-bottom: rem(36px);
+    padding-left: rem(30px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sewing__card-title {
+    font-family: $ynormal;
+    font-size: rem(24px);
+    margin-bottom: rem(13px);
+}
+
+.sewing__card-desc {
+    font-weight: 300;
+    color: $black-light;
+}
+
+.sewing__promo {
+    display: flex;
+    margin-bottom: rem(56px);
+}
+.sewing__promo-left, .sewing__promo-right {
+    height: 830px;
+    background: center top / cover no-repeat;
+}
+.sewing__promo-left {
+    width: 65%;
+}
+
+.sewing__promo-right {
+    width: 35%;
+}
