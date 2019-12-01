@@ -27,5 +27,5 @@ $(document).ready(function () {
         // With optional speed parameter
         // Parameters has to be in square bracket '[]'
         reviewsSlider.trigger('prev.owl.carousel');
-    })
+    });
 });

@@ -1,0 +1,34 @@
+.milano__text-content {
+    p {
+        font-weight: 300;
+        line-height: 125%;
+        margin-bottom: rem(20px);
+        color: $black-light;
+    }
+    ul {
+        li {
+            line-height: 125%;
+            color: $black;
+            display: flex;
+            align-items: baseline;
+            margin-bottom: rem(26px);
+            &:before {
+                content:'';
+                width: 7px;
+                height: 7px;
+                border-radius: 50%;
+                display: block;
+                background-color: $black;
+                flex-shrink: 0;
+                margin-right: rem(20px);
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.milano__text-wrap {
+    margin-bottom: rem(50px);
+}

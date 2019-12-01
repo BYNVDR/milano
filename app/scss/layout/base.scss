@@ -107,6 +107,15 @@ address {
     padding: rem(40px);
 }
 
+.section-white-bg {
+    background-color: #FFFFFF;
+    max-width: 96%;
+    margin: 0 auto;
+    padding-bottom: rem(73px);
+    padding-top: rem(34px);
+    margin-bottom: rem(100px);
+}
+
 .y-title {
     font-family: $ynormal;
 }
