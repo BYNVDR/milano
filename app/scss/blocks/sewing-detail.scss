@@ -1,0 +1,41 @@
+.sewing-detail {
+    margin-bottom: rem(77px);
+}
+
+.sewing-detail__desc {
+   margin-bottom: rem(60px);
+}
+
+.sewing-detail__types {
+    border: 1px solid $purple;
+    border-radius: 5px;
+    padding: rem(20px) rem(20px) rem(20px) rem(30px);
+}
+
+.sewing-detail__types-title {
+    font-size: rem(24px);
+    line-height: 125%;
+    font-weight: 500;
+    color: $purple;
+    margin-bottom: rem(11px);
+}
+
+.sewing-detail__types-list {
+    font-size: rem(16px);
+    font-weight: 300;
+    line-height: 125%;
+    color: $black;
+    display: flex;
+    flex-wrap: wrap;
+    li {
+        width: 33%;
+        margin-bottom: rem(10px);
+    }
+}
+
+.sewing-detail__banner {
+    background: center center / cover no-repeat;
+    padding: 25px 50px 40px;
+    color: #FFFFFF;
+    margin-bottom: rem(56px);
+}

@@ -1,0 +1,21 @@
+.sewing-examples {
+    .owl-nav,.owl-dots {
+        display: none;
+    }
+}
+
+.sewing-examples__line {
+    width: 130px;
+    height: 6px;
+    margin: 0 auto (40px) auto;
+    background: linear-gradient(180deg, #E85FB1 0%, #C447FF 100%);
+}
+
+.sewing-examples__pic {
+    min-height: rem(570px);
+}
+
+.sewing-slider__slider-buttons {
+    left: 6%;
+    width: 88%;
+}
