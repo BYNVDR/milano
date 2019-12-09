@@ -39,3 +39,28 @@
     color: #FFFFFF;
     margin-bottom: rem(56px);
 }
+
+.sewing-detail__models {
+    text-align: center;
+    margin-bottom: rem(77px);
+}
+
+.sewing-detail__models-card {
+    margin-bottom: rem(30px);
+}
+
+.sewing-detail__models-pic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-bottom: rem(30px);
+}
+
+.sewing-detail__models-price {
+    font-weight: bold;
+}
+
+.sewing-detail__models-desc {
+    margin-bottom: rem(77px);
+}

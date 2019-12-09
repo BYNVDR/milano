@@ -28,4 +28,15 @@ $(document).ready(function () {
         // Parameters has to be in square bracket '[]'
         reviewsSlider.trigger('prev.owl.carousel');
     });
+
+    $('.dropdown-list__tab-head').on('click', function() {
+        console.log('gfdgf');
+        if (!$(this).hasClass('active')) {
+            $(this).addClass('active');
+            $(this).next('.dropdown-list__sublist').show();
+        } else {
+            $(this).removeClass('active');
+            $(this).next('.dropdown-list__sublist').hide();
+        }
+    })
 });
