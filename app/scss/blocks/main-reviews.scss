@@ -1,7 +1,13 @@
 .reviews {
     background: linear-gradient(180deg, #FFF2F2 0%, #F9F9F9 100%);
+
     .owl-nav {
         display: none;
+    }
+
+    @include tablets {
+        padding-bottom: rem(60px);
+
     }
 }
 
@@ -10,14 +16,31 @@
         position: absolute;
         left: 46%;
         bottom: 0;
+
         .owl-dot {
             width: rem(15px);
             height: rem(15px);
             background-color: $text-gray;
             border: none;
             border-radius: 50%;
+
             &.active {
                 background: linear-gradient(180deg, #E85FB1 0%, #C447FF 100%);
+            }
+        }
+
+        @include tablets {
+            bottom: rem(-30px);
+        }
+    }
+
+    .reviews__slider-photo {
+        @include tablets {
+            margin-bottom: 40px;
+
+            img {
+                width: 100%;
+                object-fit: cover;
             }
         }
     }
@@ -31,10 +54,12 @@
 .reviews__slider-photo {
     position: relative;
     z-index: 2;
+
     img {
         border-radius: 5px;
         overflow: hidden;
     }
+
     &:before {
         content: '';
         position: absolute;
@@ -69,6 +94,7 @@
 
 .reviews__slider-service {
     margin-bottom: rem(30px);
+
     span {
         color: #FFFFFF;
         background: linear-gradient(180deg, #E85FB1 0%, #C447FF 100%);

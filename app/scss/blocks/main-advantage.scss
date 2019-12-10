@@ -2,6 +2,9 @@
     .container {
         border-bottom: 1px solid #EFEFEF;
         padding-bottom: rem(67px);
+        @include tablets {
+            padding-bottom: 20px;
+        }
     }
 }
 
@@ -13,6 +16,9 @@
 .advantage__item {
     display: flex;
     align-items: center;
+    @include tablets {
+        margin-bottom: 20px;
+    }
 }
 
 .advantage__pic {

@@ -1,3 +1,9 @@
+.about {
+    @include tablets {
+        background-color: #FFFFFF;
+    }
+}
+
 .about-page__slider {
     .owl-nav,.owl-dots {
         display: none;
@@ -7,4 +13,18 @@
 .about-page__slider-buttons {
     left: 6%;
     width: 88%;
+    @include laptop {
+        transform: translateY(0);
+        top: 35%;
+    }
+    @include tablets {
+        transform: translateY(-50%);
+        top: 50%;
+    }
+}
+
+.about__picture {
+    @include tablets {
+        display: none;
+    }
 }

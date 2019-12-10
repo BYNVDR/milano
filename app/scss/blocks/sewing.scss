@@ -26,6 +26,16 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    @include small-desktop {
+        padding-top: rem(20px);
+        padding-right: rem(20px);
+        padding-bottom: rem(20px);
+        padding-left: rem(20px);
+    }
+    @include laptop {
+        padding-top: rem(15px);
+        padding-bottom: rem(15px);
+    }
 }
 
 .sewing__card-title {
@@ -46,6 +56,9 @@
 .sewing__promo-left, .sewing__promo-right {
     height: 830px;
     background: center top / cover no-repeat;
+    @include tablets {
+        height: rem(500px);
+    }
 }
 .sewing__promo-left {
     width: 65%;
@@ -53,4 +66,15 @@
 
 .sewing__promo-right {
     width: 35%;
+}
+
+.sewing-slider__slider-buttons {
+    @include small-desktop {
+        transform: translateY(0);
+        top: rem(210px);
+    }
+    @include tablets {
+        transform: translateY(-50%);
+        top: 50%;
+    }
 }

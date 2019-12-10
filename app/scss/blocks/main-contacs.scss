@@ -17,24 +17,49 @@
 
 .contacts__address {
     display: flex;
+    @include laptop {
+        flex-direction: column;
+    }
+    @include tablets {
+        margin-bottom: rem(20px);
+    }
 }
 
 .contacts__col {
     width: 60%;
     margin-right: rem(12px);
+    @include laptop {
+        width: 100%;
+    }
 }
 
 .contacts__col-address {
     display: flex;
     font-family: $ynormal;
-font-size: rem(18px);
-line-height: rem(21px);
+    font-size: rem(18px);
+    line-height: rem(21px);
     &:before {
         content: '';
         width: rem(28px);
         margin-right: rem(11px);
         flex-shrink: 0;
         background: url('../images/map-marker.png') center top / contain no-repeat;
+        @include tablets {
+            width: rem(40px);
+            height: rem(40px);
+        }
+    }
+    @include laptop {
+        margin-bottom: 10px;
+    }
+}
+
+.contacts__col-desc {
+    @include laptop {
+        padding-left: rem(32px);
+    }
+    @include tablets {
+        padding-left: rem(46px);
     }
 }
 

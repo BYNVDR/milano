@@ -7,6 +7,8 @@
         position: relative;
         // margin-bottom: rem(34px);
     }
+    position: relative;
+    z-index: 31;
 }
 
 .header__container {
@@ -17,6 +19,25 @@
 
 .header__nav {
     flex: .8;
+    @include laptop {
+        flex:.9;
+    }
+    @include tablets {
+        display: none;
+    }
+    &.active {
+        @include tablets {
+            display: flex;
+            padding-top: rem(109px);
+            position: fixed;
+            width: 70%;
+            height: 100%;
+            background: #FFFFFF;
+            z-index: 30;
+            right: 0;
+            top: 0;
+        }
+    }
 }
 
 .header__logo {
@@ -31,6 +52,19 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @include tablets {
+        flex-direction: column;
+        padding-left: 20px;
+        padding-top: 40px;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+}
+
+.header__menu-item {
+    @include tablets {
+        margin-bottom: 15px;
+    }
 }
 
 .header__menu-link {
@@ -38,10 +72,15 @@
     color: inherit;
     text-transform: uppercase;
     font-weight: 300;
+    @include tablets {
+        font-size: rem(32px);
+    }
 }
 
 .header__viber {
     @include flexCenterCenter;
+    position: relative;
+    z-index: 40;
 }
 
 .header__viber-logo {

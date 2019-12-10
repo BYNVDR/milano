@@ -1,14 +1,17 @@
 .main-slider {
     position: relative;
+
     .owl-nav {
         display: none;
     }
+
     .owl-dots {
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
         bottom: rem(50px);
     }
+
     .owl-dot {
         width: 15px;
         height: 15px;
@@ -17,6 +20,7 @@
         opacity: .5;
         transition: opacity .3s ease-out;
         border: 0;
+
         &.active {
             opacity: 1;
         }
@@ -56,12 +60,25 @@
 .main-slider__content {
     margin-right: 200px;
     max-width: 300px;
+
+    @include laptop {
+        margin-right: 115px;
+        max-width: 340px;
+    }
+
+    @include tablets {
+        margin-right: 60px;
+        max-width: 260px;
+    }
 }
 
 .main-slider__desc {
     font-size: rem(20px);
     font-weight: 300;
     margin-bottom: rem(25px);
+    @include tablets {
+        font-weight: 500;
+    }
 }
 
 .main-slider__buttons {
@@ -73,6 +90,12 @@
     justify-content: space-between;
     width: 95%;
     z-index: 4;
+    @include tablets {
+        left: 6%;
+        width: 88%;
+        top: 40%;
+        transform: translateY(0);
+    }
 }
 
 .main-slider__button {
@@ -81,13 +104,17 @@
     border: 1px solid $black;
     border-radius: 6px;
     transition: background .3s ease-out;
+
     &:hover {
         background-color: $black;
+
         svg {
             stroke: #FFFFFF;
         }
     }
+
     @include flexCenterCenter;
+
     svg {
         stroke: $black;
         height: 50%;

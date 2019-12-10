@@ -39,4 +39,16 @@ $(document).ready(function () {
             $(this).next('.dropdown-list__sublist').hide();
         }
     })
+
+    $('#mobileMenuButton').on('click', function () {
+        if (!$(this).hasClass('active')) {
+            $(this).addClass('active');
+            $('.header__nav').addClass('active');
+            $('body').addClass('fixed');
+        } else {
+            $(this).removeClass('active');
+            $('.header__nav').removeClass('active');
+            $('body').removeClass('fixed');
+        }
+    });
 });

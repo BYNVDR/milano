@@ -6,6 +6,12 @@
    margin-bottom: rem(60px);
 }
 
+.sewing-detail__desc-text {
+    @include tablets {
+        margin-bottom: rem(20px);
+    }
+}
+
 .sewing-detail__types {
     border: 1px solid $purple;
     border-radius: 5px;
@@ -43,6 +49,9 @@
 .sewing-detail__models {
     text-align: center;
     margin-bottom: rem(77px);
+    @include tablets {
+        margin-bottom: rem(20px);
+    }
 }
 
 .sewing-detail__models-card {
@@ -63,4 +72,7 @@
 
 .sewing-detail__models-desc {
     margin-bottom: rem(77px);
+    @include tablets {
+        margin-bottom: rem(20px);
+    }
 }

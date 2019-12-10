@@ -27,12 +27,18 @@
             transform: scale(1.1);
         }
     }
+    @include tablets {
+        margin-bottom: 20px;
+    }
 }
 
 .services__item-pic {
     margin-bottom: rem(26px);
     height: rem(383px);
     overflow: hidden;
+    @include laptop {
+        height: rem(240px);
+    }
 }
 
 .services__item-title {
@@ -40,6 +46,9 @@
     margin: 0 auto;
     margin-bottom: rem(17px);
     max-width: 90%;
+    @include laptop {
+        min-height: 70px;
+    }
 }
 
 .services__item-button {
