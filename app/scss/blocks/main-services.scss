@@ -18,7 +18,7 @@
         transition: all .2s ease-out;
     }
     &:hover {
-        background-color: #F8E6E6;
+        background-color: $pink-intence;
         .services__item-button {
             background: linear-gradient(180deg, #E85FB1 0%, #C447FF 100%);
             color: #FFFFFF;
@@ -30,6 +30,9 @@
     @include tablets {
         margin-bottom: 20px;
     }
+    @include phones {
+        background-color: $pink-intence;
+    }
 }
 
 .services__item-pic {
@@ -38,6 +41,13 @@
     overflow: hidden;
     @include laptop {
         height: rem(240px);
+    }
+    @include phones {
+        img {
+            min-width: 100%;
+            min-width: 100%;
+            object-fit: cover;
+        }
     }
 }
 
@@ -48,6 +58,9 @@
     max-width: 90%;
     @include laptop {
         min-height: 70px;
+    }
+    @include phones {
+        min-height: auto;
     }
 }
 
