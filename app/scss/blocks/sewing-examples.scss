@@ -11,8 +11,17 @@
     background: linear-gradient(180deg, #E85FB1 0%, #C447FF 100%);
 }
 
+.sewing-examples__slider {
+    @include phones {
+        margin-bottom: 20px;
+    }
+}
+
 .sewing-examples__pic {
     min-height: rem(570px);
+    @include phones {
+        min-height: initial;
+    }
 }
 
 .sewing-slider__slider-buttons {

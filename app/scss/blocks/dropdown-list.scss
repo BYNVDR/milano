@@ -61,22 +61,51 @@
     padding: rem(15px) rem(62px) rem(32px) rem(33px);
     line-height: 1.5;
     display: none;
+    @include phones {
+        padding: rem(15px) rem(30px);
+    }
 }
 
 .dropdown-list__sublist-item {
     display: flex;
+    @include phones {
+        flex-wrap: wrap;
+        margin-bottom: 5px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid $dropdown-borders;
+    }
 }
 
 .dropdown-list__sublist-name {
     width: 50%;
+    @include tablets {
+        width: 45%;
+    }
+    @include phones {
+        width: 80%;
+    }
 }
 
 .dropdown-list__sublist-time {
     width: 25%;
     text-align: center;
+    @include tablets {
+        width: 20%;
+    }
+    @include phones {
+        text-align: right;
+        width: 20%;
+    }
 }
 
 .dropdown-list__sublist-price {
     width: 25%;
     text-align: right;
+    @include tablets {
+        width: 35%;
+    }
+    @include phones {
+        width: 100%;
+        text-align: right;
+    }
 }

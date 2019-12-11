@@ -16,6 +16,12 @@
 .comments-list__item {
     width: 32%;
     margin-bottom: rem(56px);
+    @include tablets {
+        width: 48%;
+    }
+    @include phones {
+        width: 100%;
+    }
 }
 
 .comments-list__photo {

@@ -109,6 +109,9 @@ address {
     @include tablets {
         max-width: 993px;
     }
+    @include phones {
+        width: 98%;
+    }
 }
 
 .img-fluid {
@@ -131,6 +134,9 @@ address {
     padding-bottom: rem(73px);
     padding-top: rem(34px);
     margin-bottom: rem(100px);
+    @include phones {
+        padding-bottom: rem(30px);
+    }
 }
 
 .section-transparent-bg {
@@ -166,6 +172,9 @@ address {
         &:hover {
             background: $gradient-hover;
         }
+        @include phones {
+            padding: 0 rem(40px);
+        }
     }
     &.gray-btn {
         background-color: $gray;
@@ -177,6 +186,9 @@ address {
         height: rem(58px);
         line-height: rem(58px);
         padding: 0 rem(38px);
+        @include phones {
+            padding: 0 rem(25px);
+        }
     }
     &.purple-btn-sm {
         background: $gradient;
@@ -192,6 +204,9 @@ address {
         &:hover {
             background: $gradient-hover;
         }
+        @include phones {
+            padding: 0 rem(25px);
+        }
     }
     &.transparent-btn {
         background: transparent;
@@ -205,6 +220,9 @@ address {
         line-height: rem(58px);
         padding: 0 rem(38px);
         transition: all .3s ease-out;
+        @include phones {
+            padding: 0 rem(25px);
+        }
     }
 }
 

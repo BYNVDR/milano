@@ -55,6 +55,9 @@
     background: center center / cover no-repeat;
     z-index: 3;
     position: relative;
+    @include phones {
+        min-height: rem(450px);
+    }
 }
 
 .main-slider__content {
@@ -69,6 +72,12 @@
     @include tablets {
         margin-right: 60px;
         max-width: 260px;
+    }
+    @include phones {
+        max-width: rem(280px);
+    }
+    @include phones-small {
+        margin-right: 40px;
     }
 }
 
@@ -95,6 +104,9 @@
         width: 88%;
         top: 40%;
         transform: translateY(0);
+    }
+    @include phones {
+        top: 32%;
     }
 }
 

@@ -79,6 +79,9 @@
     flex-direction: column;
     justify-content: center;
     padding-left: rem(50px);
+    @include phones {
+        padding-left: 15px;
+    }
 }
 
 .reviews__slider-date {

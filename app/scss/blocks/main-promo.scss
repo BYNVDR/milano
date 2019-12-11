@@ -17,6 +17,9 @@
         background: url('../images/promo_bg.jpg') right center / 37% no-repeat; 
         margin-bottom: 20px;
     }
+    @include phones {
+        background: none;
+    }
 }
 
 .promo__title {
@@ -26,6 +29,10 @@
     margin-bottom: rem(10px);
     @include tablets {
         max-width: 55%;
+    }
+    @include phones {
+        max-width: 100%;
+        font-size: rem(44px);
     }
 }
 
@@ -40,6 +47,9 @@
     }
     @include tablets {
         max-width: 55%;
+    }
+    @include phones {
+        max-width: 100%;
     }
 }
 

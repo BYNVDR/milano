@@ -16,6 +16,13 @@
     flex-shrink: 0;
     width: rem(320px);
     height: rem(278px);
+    @include phones {
+        width: rem(180px);
+        img {
+            height: 100%;
+            object-fit: cover;
+        }
+    }
 }
 
 .sewing__card-content {
@@ -58,6 +65,9 @@
     background: center top / cover no-repeat;
     @include tablets {
         height: rem(500px);
+    }
+    @include phones {
+        height: rem(350px);
     }
 }
 .sewing__promo-left {

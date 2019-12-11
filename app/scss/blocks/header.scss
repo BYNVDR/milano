@@ -37,6 +37,9 @@
             right: 0;
             top: 0;
         }
+        @include phones {
+            width: 75%;
+        }
     }
 }
 
@@ -46,6 +49,11 @@
     justify-content: center;
     width: rem(180px);
     height: rem(62px);
+    position: relative;
+    z-index: 40;
+    @include tablets {
+        width: rem(140px);
+    }
 }
 
 .header__menu {
@@ -72,6 +80,10 @@
     color: inherit;
     text-transform: uppercase;
     font-weight: 300;
+    transition: color .3s ease-out;
+    &.active,&:hover {
+        color: $purple;
+    }
     @include tablets {
         font-size: rem(32px);
     }
@@ -85,6 +97,9 @@
 
 .header__viber-logo {
     margin-right: rem(15px);
+    @include phones {
+        display: none;
+    }
 }
 
 .header__viber-content {

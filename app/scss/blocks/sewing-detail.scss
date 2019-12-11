@@ -1,5 +1,8 @@
 .sewing-detail {
     margin-bottom: rem(77px);
+    @include phones {
+        margin-bottom: 20px;  
+    }
 }
 
 .sewing-detail__desc {
@@ -9,6 +12,12 @@
 .sewing-detail__desc-text {
     @include tablets {
         margin-bottom: rem(20px);
+    }
+}
+
+.sewing-detail__feedback {
+    @include phones {
+        text-align: center;
     }
 }
 
