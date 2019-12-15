@@ -9,7 +9,7 @@ $(document).ready(function () {
         console.log('next')
     })
     // Go to the previous item
-    $('.customPrevBtn').click(function() {
+    $('.main-slider__button--prev').click(function() {
         // With optional speed parameter
         // Parameters has to be in square bracket '[]'
         mainSlider.trigger('prev.owl.carousel');
@@ -23,7 +23,7 @@ $(document).ready(function () {
         console.log('next')
     })
     // Go to the previous item
-    $('.customPrevBtn').click(function() {
+    $('.main-slider__button--prev').click(function() {
         // With optional speed parameter
         // Parameters has to be in square bracket '[]'
         reviewsSlider.trigger('prev.owl.carousel');
