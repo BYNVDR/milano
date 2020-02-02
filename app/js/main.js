@@ -51,4 +51,31 @@ $(document).ready(function () {
             $('body').removeClass('fixed');
         }
     });
+
+    ($(function () {
+
+        $('[data-popup]').on('click', function (e) {
+            e.preventDefault();
+            var $this = $(this);
+            var popupName = $this.attr('data-popup');
+            var currentPopup = $('[data-popup-content='+popupName+']');
+            currentPopup.addClass('active');
+            
+        });
+
+        $('[data-popup-close]').on('click', function () {
+            var popupName = $(this).attr('data-popup-close');
+            $('[data-popup-content='+popupName+']').removeClass('active');
+        });
+
+        $('.popup').mouseup(function (e){
+            var div = $(".popup__container");
+            if (!div.is(e.target)
+                && div.has(e.target).length === 0) {
+                $(this).removeClass('active');
+            }
+        });
+
+    }));
+
 });

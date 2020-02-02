@@ -391,7 +391,7 @@
                     <div class="footer__menu col-lg-2">
                         <div class="footer__menu-title y-title">+7 (925) 601-86-82</div>
                         <div class="footer__button">
-                            <button class="btn footer__btn purple-btn-sm">Обратный звонок</button>
+                            <button data-popup="feedback-popup" class="popup-btn btn footer__btn purple-btn-sm">Обратный звонок</button>
                         </div>
                     </div>
                 </div>
@@ -417,7 +417,14 @@
             </div>
         </footer>
     </div>
-
+    
+    <div class="overlay"></div>
+    <div class="popup" data-popup-content="feedback-popup">
+        <div class="popup__container">
+            <button data-popup-close="feedback-popup" class="btn popup__close-btn"><img src="" alt=""></button>
+            <div class="popup__content"></div>
+        </div>
+    </div>
 
 </body>
 
